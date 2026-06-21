@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог о чае — Время Чая</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header sticky-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-leaf" style="color: #6BA048; margin-right:5px;"></i> Время Чая
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="questions.html">Вопросы</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="quiz.html">Тест</a></li>
+                </ul>
+            </nav>
+          <div class="header-icons">
+    <a href="favorites.html" class="icon-link">♥️</a>
+    <a href="cart.html" class="icon-link" style="position: relative;">
+        🛒
+        <span class="cart-count">0</span>
+    </a>
+</div>
+        </div>
+    </header>
+
+    <section class="blog-page">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="index.html">Главная</a> / <span>Блог</span>
+            </div>
+
+            <div class="blog-header">
+                <h1>Чайный блог</h1>
+                <p>Полезные статьи, истории и советы от чайного мастера</p>
+            </div>
+
+            <div class="blog-grid">
+                
+                <!-- Статья 1 -->
+                <div class="blog-card" data-id="1">
+                    <span class="card-date">2 декабря 2025</span>
+                    <h3>Как правильно заваривать зелёный чай</h3>
+                    <p>Вода не должна быть кипятком. Рассказываем про температуру и время.</p>
+                    <span class="read-more">Читать далее →</span>
+                </div>
+
+                <!-- Статья 2 -->
+                <div class="blog-card" data-id="2">
+                    <span class="card-date">7 февраля 2025</span>
+                    <h3>5 неочевидных свойств имбирного чая</h3>
+                    <p>Имбирь не только согревает. Узнайте, как он помогает здоровью.</p>
+                    <span class="read-more">Читать далее →</span>
+                </div>
+
+                <!-- Статья 3 -->
+                <div class="blog-card" data-id="3">
+                    <span class="card-date">20 марта 2026</span>
+                    <h3>Улун или пуэр? Разбираемся в видах чая</h3>
+                    <p>Гид по главным чайным сортам: чем отличается Улун от Пуэра.</p>
+                    <span class="read-more">Читать далее →</span>
+                </div>
+
+                <!-- Статья 4 -->
+                <div class="blog-card" data-id="4">
+                    <span class="card-date">5 мая 2026</span>
+                    <h3>Чайные традиции разных стран</h3>
+                    <p>Путешествие в мир чайных церемоний: от Китая до Англии.</p>
+                    <span class="read-more">Читать далее →</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col logo-col">
+                    <div class="footer-logo"><i class="fa-solid fa-leaf" style="margin-right:5px;"></i> Время Чая</div>
+                </div>
+                <div class="footer-col">
+                    <h4>Каталог</h4>
+                    <ul>
+                        <li><a href="#">Весь чай</a></li>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Популярное</a></li>
+                        <li><a href="#">Подарочные наборы</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>О нас</h4>
+                    <ul>
+                        <li><a href="#">Наша история</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Гарантия качества</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col contacts-col">
+                    <h4>Контакты</h4>
+                    <p><a href="mailto:info@vremyachaya.by">info@vremyachaya.by</a></p>
+                    <p><a href="tel:+375339086538">+375339086538</a></p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-vk"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Время Чая. Все права защищены</p>
+                <a href="#" class="privacy-policy">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/blog.js"></script>
+</body>
+</html>

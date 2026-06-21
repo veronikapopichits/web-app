@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест-подбор чая — Время Чая</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header sticky-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-leaf" style="color: #6BA048; margin-right:5px;"></i> Время Чая
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="questions.html">Вопросы</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="quiz.html">Тест</a></li>
+                </ul>
+            </nav>
+         <div class="header-icons">
+    <a href="favorites.html" class="icon-link">♥️</a>
+    <a href="cart.html" class="icon-link" style="position: relative;">
+        🛒
+        <span class="cart-count">0</span>
+    </a>
+</div>
+        </div>
+    </header>
+
+    <section class="quiz-page">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="index.html">Главная</a> / <span>Подбор чая</span>
+            </div>
+
+            <div class="quiz-stepper" id="quizStepper">
+                <div class="step active"><div class="step-circle">1</div><span>Время</span></div>
+                <div class="step-line"></div>
+                <div class="step"><div class="step-circle">2</div><span>Эффект</span></div>
+                <div class="step-line"></div>
+                <div class="step"><div class="step-circle">3</div><span>Вкус</span></div>
+                <div class="step-line"></div>
+                <div class="step"><div class="step-circle">4</div><span>Результат</span></div>
+            </div>
+
+            <div id="quizContainer">
+                <!-- ШАГ 1 -->
+                <div class="quiz-step active-step" data-step="1">
+                    <h1 class="quiz-title">Когда вы обычно пьёте чай?</h1>
+                    <p class="quiz-subtitle">Выберите вариант</p>
+                    <div class="quiz-options-list" id="step1">
+                        <div class="option-card" data-value="morning">
+                            <div class="card-icon">🌅</div>
+                            <div class="card-title">Утро</div>
+                            <div class="card-desc">07:00 - 10:00</div>
+                        </div>
+                        <div class="option-card" data-value="afternoon">
+                            <div class="card-icon">☀️</div>
+                            <div class="card-title">Полдень</div>
+                            <div class="card-desc">12:00 - 16:00</div>
+                        </div>
+                        <div class="option-card" data-value="evening">
+                            <div class="card-icon">🌙</div>
+                            <div class="card-title">Вечер / Ночь</div>
+                            <div class="card-desc">17:00 - 6:00</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ШАГ 2 -->
+                <div class="quiz-step" data-step="2">
+                    <h1 class="quiz-title">Какой эффект вы ищете?</h1>
+                    <p class="quiz-subtitle">Выберите вариант</p>
+                    <div class="quiz-options-list" id="step2">
+                        <div class="option-card" data-value="relax">
+                            <div class="card-icon">😌</div>
+                            <div class="card-title">Расслабление</div>
+                            <div class="card-desc">Спокойствие и уют</div>
+                        </div>
+                        <div class="option-card" data-value="energy">
+                            <div class="card-icon">⚡</div>
+                            <div class="card-title">Бодрость</div>
+                            <div class="card-desc">Заряд энергии</div>
+                        </div>
+                        <div class="option-card" data-value="calm">
+                            <div class="card-icon">🧘</div>
+                            <div class="card-title">Гармония</div>
+                            <div class="card-desc">Баланс и тепло</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ШАГ 3 -->
+                <div class="quiz-step" data-step="3">
+                    <h1 class="quiz-title">Какой вкус вам ближе?</h1>
+                    <p class="quiz-subtitle">Выберите вариант</p>
+                    <div class="quiz-options-list" id="step3">
+                        <div class="option-card" data-value="floral">
+                            <div class="card-icon">🌸</div>
+                            <div class="card-title">Цветочный</div>
+                            <div class="card-desc">Нежный и ароматный</div>
+                        </div>
+                        <div class="option-card" data-value="herbal">
+                            <div class="card-icon">🌿</div>
+                            <div class="card-title">Травяной</div>
+                            <div class="card-desc">Пряный и свежий</div>
+                        </div>
+                        <div class="option-card" data-value="classic">
+                            <div class="card-icon">☕</div>
+                            <div class="card-title">Классический</div>
+                            <div class="card-desc">Насыщенный и терпкий</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ШАГ 4 -->
+                <div class="quiz-step" data-step="4">
+                    <h1 class="quiz-title">Мы подобрали для вас идеальные варианты!</h1>
+                    <p class="quiz-subtitle">Вот чаи, которые лучше всего подходят под ваши предпочтения:</p>
+                    
+                    <!-- Вместо одной карточки, здесь будет сетка с рекомендациями -->
+                    <div class="result-box">
+                        <div id="resultContainer" class="result-grid">
+                            <!-- JS сгенерирует карточки сюда -->
+                        </div>
+                        
+                        <a href="catalog.html" class="btn-next" style="text-decoration: none; display: inline-block; margin-top: 10px;">Смотреть в каталоге</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz-actions">
+                <button class="btn-prev" id="prevBtn" style="display:none;">&lt; Назад</button>
+                <button class="btn-next" id="nextBtn">Далее &gt;</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col logo-col">
+                    <div class="footer-logo"><i class="fa-solid fa-leaf" style="margin-right:5px;"></i> Время Чая</div>
+                </div>
+                <div class="footer-col">
+                    <h4>Каталог</h4>
+                    <ul>
+                        <li><a href="#">Весь чай</a></li>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Популярное</a></li>
+                        <li><a href="#">Подарочные наборы</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>О нас</h4>
+                    <ul>
+                        <li><a href="#">Наша история</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Гарантия качества</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col contacts-col">
+                    <h4>Контакты</h4>
+                    <p><a href="mailto:info@vremyachaya.by">info@vremyachaya.by</a></p>
+                    <p><a href="tel:+375339086538">+375339086538</a></p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-vk"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Время Чая. Все права защищены</p>
+                <a href="#" class="privacy-policy">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/quiz.js"></script>
+</body>
+</html>

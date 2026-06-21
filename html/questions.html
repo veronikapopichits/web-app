@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вопросы — Время Чая</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header sticky-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-leaf" style="color: #6BA048; margin-right:5px;"></i> Время Чая
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="questions.html">Вопросы</a></li>
+                    <li><a href="blog.html"href="#">Блог</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="quiz.html">Тест</a></li>
+                </ul>
+            </nav>
+           <div class="header-icons">
+    <a href="favorites.html" class="icon-link">♥️</a>
+    <a href="cart.html" class="icon-link" style="position: relative;">
+        🛒
+        <span class="cart-count">0</span>
+    </a>
+</div>
+        </div>
+    </header>
+
+    <section class="questions-page">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="index.html">Главная</a> / <span>Вопросы</span>
+            </div>
+
+            <h1>Остались вопросы? Спросите у чайного мастера</h1>
+
+            <div class="questions-layout">
+                <!-- ЛЕВАЯ КОЛОНКА: ФОРМА -->
+                <div class="form-wrapper">
+                    <form id="questionForm">
+                        <!-- Имя и Email в одной строке -->
+                        <div class="form-row-2col">
+                            <div class="form-group">
+                                <input type="text" id="qName" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="qEmail" placeholder="Ваш email" required>
+                            </div>
+                        </div>
+
+                        <!-- Тема вопроса -->
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <select id="qTopic">
+                                <option value="">Тема вопроса</option>
+                                <option value="delivery">Доставка и оплата</option>
+                                <option value="product">Состав и вкус чая</option>
+                                <option value="promo">Акции и скидки</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+
+                        <!-- Текст вопроса -->
+                        <div class="form-group">
+                            <textarea id="qMessage" placeholder="Ваш вопрос" required></textarea>
+                        </div>
+
+                        <!-- Чекбокс согласия -->
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="qConsent" required>
+                            <label for="qConsent">Я согласен на обработку персональных данных</label>
+                        </div>
+
+                        <!-- Кнопка -->
+                        <button type="submit" class="btn-submit">Отправить вопрос</button>
+                    </form>
+                </div>
+
+                <!-- ПРАВАЯ КОЛОНКА: КАРТИНКА -->
+                <div class="questions-image">
+                    <!-- ЗАМЕНИТЕ ССЫЛКУ НА ВАШУ КАРТИНКУ С ЧАШКОЙ ЧАЯ -->
+                    <img src="../images/tea-cup-question.png" alt="Чашка чая с мятой">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col logo-col">
+                    <div class="footer-logo"><i class="fa-solid fa-leaf" style="margin-right:5px;"></i> Время Чая</div>
+                </div>
+                <div class="footer-col">
+                    <h4>Каталог</h4>
+                    <ul>
+                        <li><a href="#">Весь чай</a></li>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Популярное</a></li>
+                        <li><a href="#">Подарочные наборы</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>О нас</h4>
+                    <ul>
+                        <li><a href="#">Наша история</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Гарантия качества</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col contacts-col">
+                    <h4>Контакты</h4>
+                    <p><a href="mailto:info@vremyachaya.by">info@vremyachaya.by</a></p>
+                    <p><a href="tel:+375339086538">+375339086538</a></p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-vk"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Время Чая. Все права защищены</p>
+                <a href="#" class="privacy-policy">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/questions.js"></script>
+</body>
+</html>

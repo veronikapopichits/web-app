@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог чая — Время Чая</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ШАПКА (ТЕПЕРЬ ОНА ЗАКРЕПЛЕНА) -->
+    <header class="header sticky-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-leaf" style="color: #6BA048; margin-right:5px;"></i> Время Чая
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="questions.html">Вопросы</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="quiz.html">Тест</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+    <a href="favorites.html" class="icon-link">♥️</a>
+    <a href="cart.html" class="icon-link" style="position: relative;">
+        🛒
+        <span class="cart-count">0</span>
+    </a>
+</div>
+        </div>
+    </header>
+
+    <section class="catalog-page">
+        <div class="container">
+            <div class="breadcrumbs">
+    <a href="index.html">Главная</a> / <span>Каталог чая</span>
+</div>
+            <h1 class="page-title">Каталог чая</h1>
+
+            <div class="catalog-top">
+                <div class="filter-group">
+                    <label for="sortSelect">Сортировать:</label>
+                    <select id="sortSelect">
+                        <option value="popular">Популярные</option>
+                        <option value="cheap">Сначала дешевые</option>
+                        <option value="expensive">Сначала дорогие</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="showSelect">Показать:</label>
+                    <select id="showSelect">
+                        <option value="3">3</option>
+                        <option value="6">6</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Сетка каталога -->
+            <div class="catalog-grid" id="catalogGrid">
+                
+                <!-- Товар 1: Молочный улун (ведет на product.html) -->
+                <div class="catalog-card" data-price="7">
+                    <a href="product.html" class="card-link">
+                        <div class="card-img-wrap">
+                            <img src="../images/tea3.png" alt="Молочный улун">
+                        </div>
+                        <h3 class="card-title">Молочный улун</h3>
+                        <div class="card-meta">
+                            <span class="card-price">7 Руб</span>
+                            <span class="card-icon">☀️</span>
+                        </div>
+                    </a>
+                    <div class="card-bottom">
+                        <button class="btn-cart">В корзину</button>
+                        <button class="btn-heart">♡</button>
+                    </div>
+                </div>
+
+                <!-- Товар 2: Ромашковый чай (ведет на product-chamomile.html) -->
+                <div class="catalog-card" data-price="6">
+                    <a href="product-chamomile.html" class="card-link">
+                        <div class="card-img-wrap">
+                            <img src="../images/tea2.png" alt="Ромашковый чай">
+                        </div>
+                        <h3 class="card-title">Ромашковый чай</h3>
+                        <div class="card-meta">
+                            <span class="card-price">6 Руб</span>
+                            <span class="card-icon">🌙</span>
+                        </div>
+                    </a>
+                    <div class="card-bottom">
+                        <button class="btn-cart">В корзину</button>
+                        <button class="btn-heart">♡</button>
+                    </div>
+                </div>
+
+                <!-- Товар 3: Гречишный чай (ведет на product-buckwheat.html) -->
+                <div class="catalog-card" data-price="9">
+                    <a href="product-buckwheat.html" class="card-link">
+                        <div class="card-img-wrap">
+                            <img src="../images/tea1.png" alt="Гречишный чай">
+                        </div>
+                        <h3 class="card-title">Гречишный чай</h3>
+                        <div class="card-meta">
+                            <span class="card-price">9 Руб</span>
+                            <span class="card-icon">🌙</span>
+                        </div>
+                    </a>
+                    <div class="card-bottom">
+                        <button class="btn-cart">В корзину</button>
+                        <button class="btn-heart"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Пагинация -->
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <span class="page-btn" style="cursor: default; background:none;">...</span>
+                <button class="page-btn">8</button>
+                <button class="page-btn" style="border: 1px solid #ccc;">&gt;</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col logo-col">
+                    <div class="footer-logo"><i class="fa-solid fa-leaf" style="margin-right:5px;"></i> Время Чая</div>
+                </div>
+                <div class="footer-col">
+                    <h4>Каталог</h4>
+                    <ul>
+                        <li><a href="#">Весь чай</a></li>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Популярное</a></li>
+                        <li><a href="#">Подарочные наборы</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>О нас</h4>
+                    <ul>
+                        <li><a href="#">Наша история</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Гарантия качества</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col contacts-col">
+                    <h4>Контакты</h4>
+                    <p><a href="mailto:info@vremyachaya.by">info@vremyachaya.by</a></p>
+                    <p><a href="tel:+375339086538">+375339086538</a></p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-vk"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Время Чая. Все права защищены</p>
+                <a href="#" class="privacy-policy">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Ваш JS скрипт для сортировки -->
+    <script>
+        const sortSelect = document.getElementById("sortSelect");
+        const catalogGrid = document.getElementById("catalogGrid");
+
+        sortSelect.addEventListener("change", () => {
+            const cards = Array.from(catalogGrid.querySelectorAll(".catalog-card"));
+
+            if(sortSelect.value === "cheap"){
+                cards.sort((a,b) => a.dataset.price - b.dataset.price);
+            }
+
+            if(sortSelect.value === "expensive"){
+                cards.sort((a,b) => b.dataset.price - a.dataset.price);
+            }
+
+            catalogGrid.innerHTML = "";
+            cards.forEach(card => {
+                catalogGrid.appendChild(card);
+            });
+        });
+    </script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/product.js"></script>
+</body>
+</html>
