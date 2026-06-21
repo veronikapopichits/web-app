@@ -5,9 +5,9 @@ console.log("✅ cart.js загружен!");
 // 1. БАЗА ТОВАРОВ
 // ==========================================
 const productsDB = [
-    { id: 'молочный-улун', name: 'Молочный улун', price: 7, img: '../images/tea3.png' },
-    { id: 'ромашковый-чай', name: 'Ромашковый чай', price: 6, img: '../images/tea2.png' },
-    { id: 'гречишный-чай', name: 'Гречишный чай', price: 9, img: '../images/tea1.png' }
+    { id: 'молочный-улун', name: 'Молочный улун', price: 7, img: 'images/tea3.png' },
+    { id: 'ромашковый-чай', name: 'Ромашковый чай', price: 6, img: 'images/tea2.png' },
+    { id: 'гречишный-чай', name: 'Гречишный чай', price: 9, img: 'images/tea1.png' }
 ];
 
 // ==========================================
